@@ -1,29 +1,45 @@
 {"title": "Job Assessment",
-  "img": "img/thumbs/auctionPal.png",
+  "img": "img/thumbs/JA-thumb.png",
   "summary": "Redesigning the primary page of The Humantech System: The Job Assessment.",
   "paragraphs": [
     {"subtitle": "Background",
-      "imgs": ["img/jobAssessment/auction.jpg"],
-      "text": ["The Humantech System is Humantech's primary product. It is a SaaS platform used to perform and track ergonomic assessments"
+      "imgs": ["img/jobAssessment/JA-before.png"],
+      "text": ["The Humantech System is Humantech’s (a subsidiary of VelocityEHS) primary product. It is a SaaS platform used to perform and track ergonomic assessments in industrial workplaces, such as manufacturing plants. Users can measure the impact of jobs on workers’ bodies using proprietary and standard assessments, and then estimate the impact that different improvements would have and measure the actual impact. These main tasks take place on the Job Assessment pages."
       ]
     },
     {"subtitle": "Research",
-      "imgs": ["img/jobAssessment/bingoboard.jpg"],
-      "text": ["",
-        ""
-    ]
+      "imgs": ["img/jobAssessment/graph.png", "img/jobAssessment/numbering.png"],
+      "text": ["I was tasked with redesigning the job assessment page to be more user-friendly. I had identified some issues in my heuristic assessment, primarily that there wasn’t a clear hierarchy to the page and that the modal windows made it very difficult to cross-reference related information. I interviewed members of the consulting team and found that they also wanted a more linear, directed feel to the job assessment page so that users would know what to do next. They also requested a dedicated section for measurements, an easier way of editing Manual Material Handling data, and for the job assessment page to provide a clear overview of the job.",
+        "I had the opportunity to interview administrators of The Humantech System at a few of our major clients to get their perspective on what was and was not working, and found a lot of fear of change. Luckliy Humantech was starting to incorporate Change Management practices into our programming, so the product team incorporated Change Management by sending users messages a few months and a few weeks before launching, and initially releasing this new design behind a toggle, on an opt-in basis, and planning to evneutally roll it out to everyone.",
+        "I also user tested the design at a few different stages of this process, taking Invision and functional prototypes into THS workshops and performing remote tests with clients."
+      ]
     },
-    {"subtitle": "Sketching and Wireframes",
-      "imgs": ["img/jobAssessment/property.jpg"],
-      "text": ["",
-        ""
+    {"subtitle": "Sketching",
+      "imgs": ["img/jobAssessment/sketch1.png", "img/jobAssessment/sketch2.png"],
+      "text": ["I surveyed the consulting team and asked them to rank the different elements of the baseline job assessment page from most to least important, so that I could get a sense of what hierarchy would be appropriate for the page. I then did a couple of sketches to get a sense for how these elements could fit on an iPad, because we often send consultants into the field with an iPad but none of The Humantech System is currently responsive."
+      ]
+    },
+    {"subtitle": "Wireframes",
+      "imgs": ["img/jobAssessment/wireframe.png"]
+    },
+    {"subtitle": "Direct Causes and Improvements",
+      "imgs": ["img/jobAssessment/JA-dc.png", "img/jobAssessment/JA-i.png"],
+      "text": ["Then, I looked at the Direct Causes and Improvements flow. Direct Causes asks the user to determine what the root cause of the issues they have identified in the assessments in the previous step. Improvements then solve that root issue, such as raising a surface that is too low.",
+        "Almost every consultant that I talked to mentioned that users have trouble with filling out direct causes. They are supposed to be very technical and detailed descriptions of the issue focusing on the equipment and not the operator, and users commonly have trouble following those requirements. The example direct causes given to me were very formulaic, so I proposed the idea of giving the user a Mad-Libs style fill-in-the-blank template instead of an intimidating blank textbox. This idea was eventually tabled by the larger product team as being too restrictive on a user population that had previously had no restrictions on their behavior at all, so we added some additional categories to the direct causes to gather data for what kinds of direct cause templates we would need in the future.",
+        "I also added some additional data links in the direct causes and improvements, so that we could do some automatic estimation of the potential improvement that a collection of improvements could bring."
       ]
     },
     {"subtitle": "High-Fidelity Designs",
-      "imgs": ["img/jobAssessment/Novice.png"
+      "imgs": ["img/jobAssessment/JA-baseline.png", "img/jobAssessment/JA-wba.png", "img/jobAssessment/JA-pull.png"
       ],
-      "text": ["",
-        ""
+      "text": ["This prototype was designed to be as interactive as possible, and is therefore a bit jumpy at times:",
+        "https://projects.invisionapp.com/share/GZN7QE56FQY#/screens"
+      ]
+    },
+    {"subtitle": "Development and Lessons Learned",
+      "text": ["We ran into a fair number of roadblocks in development that led to this project not being released. The most material outcome of this project is that Humantech has hired two frontend developers, as we realized that our 5-person full-stack team didn’t quite have the skills necessary for implementing a modern design.",
+              "We also learned a lot of lessons around the design-development handoff: the importance of involving development at the wireframe stage to ensure the feasibility of what design is proposing, and the necessity of testing performance in QA as well as design accuracy.",
+              "Humantech was acquired by VelocityEHS soon after the completion of this project, and so it has been shelved for now as we work through rebranding our products."
       ]
     }
   ]
